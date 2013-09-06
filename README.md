@@ -31,5 +31,5 @@ Or if you want to specify some options:
 License
 -------
 
-puppet-neo4jis released under the MIT License. See the bundled LICENSE file
+puppet-neo4j is released under the MIT License. See the bundled LICENSE file
 for details.
