@@ -28,6 +28,10 @@ Or if you want to specify some options:
        install_dir = '/opt/neo4j',
     }
 
+Then open the Neo4j admin interface in your browser (replace `192.168.33.10` with your VM’s IP address):
+
+    http://192.168.33.10:7474
+
 License
 -------
 

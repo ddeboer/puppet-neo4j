@@ -18,6 +18,10 @@ class neo4j(
     dirname     => $dirname,
   } ->
 
+  class { 'neo4j::configure':
+    install_dir => "${install_dir}/${dirname}"
+  } ->
+
   service { 'neo4j-service':
     ensure => running,
   }
