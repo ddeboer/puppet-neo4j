@@ -19,8 +19,13 @@ class neo4j::install(
     creates => '/etc/init.d/neo4j-service',
   }
 
-  if !defined(Package['java-1.7.0-openjdk']) {
-    package { 'java-1.7.0-openjdk':
+  $java_package = $::osfamily ? {
+    'Debian'  => 'openjdk-7-jre',
+    default   => 'java-1.7.0-openjdk'
+  }
+
+  if !defined(Package[$java_package]) {
+    package { $java_package:
       ensure => installed,
     }
   }
