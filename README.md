@@ -23,9 +23,9 @@ To install Neo4j with defaults:
 Or if you want to specify some options:
 
     class { 'neo4j':
-       edition     = 'community',
-       version     = '2.0.0-M04',
-       install_dir = '/opt/neo4j',
+       edition     => 'community',
+       version     => '2.0.0-M04',
+       install_dir => '/opt/neo4j',
     }
 
 Then open the Neo4j admin interface in your browser (replace `192.168.33.10` with your VM’s IP address):
